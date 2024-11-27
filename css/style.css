@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mario{
+    width: 100px;
+    height: 150px;
+    background-image: url(../img/Camada1.png);
+    background-size: 100% 100%;
+    margin-top: 621px;
+    margin-left: 50px;
+}
+.planodefundo{
+    height: 100dvh;
+    background-size: 100% 100%;
+    background-image: url(../img/fundo.png);
+}
+.transparencia{
+background-color: blue;
+width: 85dvh;
+    height: 85dvh;
+    display: flex;
+    align-items: end;
+}
+.mario:hover{
+    animation: mario 10s linear infinite, mover 1s linear infinite;
+   
+}
+
+@keyframes mario {
+    20%{
+        background-image: url(../img/Camada2.png);
+    }
+    40%{
+        background-image: url(../img/Camada3.png);
+    }
+    60%{
+        background-image: url(../img/Camada4.png);
+    }
+    80%{
+        background-image: url(../img/Camada2.png);
+    }
+    100%{
+        background-image: url(../img/Camada3.png);
+    }
+}
+@keyframes mover{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(900px);
+    }
+}
+
